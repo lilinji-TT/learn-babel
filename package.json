@@ -1,0 +1,23 @@
+{
+  "name": "learn-babel",
+  "version": "1.0.0",
+  "description": "Learning Babel's GitHub repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babel",
+    "learn-babel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/generator": "^7.24.1",
+    "@babel/parser": "^7.24.1",
+    "@babel/template": "^7.24.0",
+    "@babel/traverse": "^7.24.1",
+    "@babel/types": "^7.24.0"
+  }
+}
