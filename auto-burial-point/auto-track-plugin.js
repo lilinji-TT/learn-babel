@@ -43,10 +43,10 @@ const autoTrackPlugin = declare((api, options, dirname) => {
 
         // 判断是否有函数体
         if (bodyPath.isBlockStatement()) {
-          bodyPath.node.body.unshift(state.trackAST);
+          bodyPath.node.body.unshift(state.trackerAST);
         } else {
           const ast = api.template.statement(
-            `${state.trackerImportId}();return PREV_BODY;`
+            `{${state.trackerImportId}();return PREV_BODY;}`
           )({ PREV_BODY: bodyPath.node });
           bodyPath.replaceWith(ast);
         }

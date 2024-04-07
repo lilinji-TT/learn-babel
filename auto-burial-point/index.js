@@ -23,4 +23,11 @@ const { code } = transformFromAstSync(ast, sourceCode, {
   ],
 });
 
+fs.writeFile("new_source_code.js", code, "UTF-8", (e) => {
+  if (err) {
+    console.error("Error: ", err.message);
+  } else {
+    console.log("Successfully generated new source code");
+  }
+});
 console.log(code);
