@@ -8,6 +8,6 @@ const { code } = transformFileSync(path.join(__dirname, "./source_code.js"), {
     sourceType: "unambiguous",
     plugins: ["jsx"],
   },
-});
+})
 
 console.log(code);
